@@ -32,4 +32,4 @@ $(document).ready(function(){
 
 
 ---- Button > Advanced > Attributes ---- 
-data-showme|(button এ যে id টা দিসিলাম)
+data-showme|(The ID of button)
