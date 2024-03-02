@@ -1,0 +1,35 @@
+Give each section of flag image and a common class (flag) and an id (bd/ind/pk)
+
+
+---- main section ----
+
+.flag{
+    display: none;
+}
+#bd{
+    display: block;
+}
+
+
+
+---- html code ----
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+var $ = jQuery
+$(document).ready(function(){
+    $('[data-showme]').on('click', function(){
+        var showme = $(this).attr('data-showme')
+        
+        $('.flag').hide()
+        $('#' + showme).show()
+    })
+})
+</script>
+
+
+
+
+---- Button > Advanced > Attributes ---- 
+data-showme|(button এ যে id টা দিসিলাম)
